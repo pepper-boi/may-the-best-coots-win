@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   version="1.1"
+   id="svg1480"
+   sodipodi:docname="dice_empty.svg"
+   inkscape:version="1.2.2 (b0a84865, 2022-12-01)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1482"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="4.4401135"
+     inkscape:cx="-24.999361"
+     inkscape:cy="23.310215"
+     inkscape:window-width="1680"
+     inkscape:window-height="997"
+     inkscape:window-x="0"
+     inkscape:window-y="25"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="g1478" />
+  <defs
+     id="defs1474" />
+  <g
+     id="g1478"
+     transform="translate(-31.305506,-4.7296088)">
+    <path
+       id="path1476"
+       style="fill:#ffffff"
+       d="M -16.200353 -32.00086 C -26.733666 -32.00086 -31.999182 -26.73339 -31.999181 -16.200079 L -31.999181 16.24914 C -31.999182 26.74912 -26.733666 31.99914 -16.200353 31.99914 L 16.250819 31.99914 C 26.750797 31.99914 32.000819 26.74912 32.000819 16.24914 L 32.000819 -16.200079 C 32.000819 -26.73339 26.750797 -32.00086 16.250819 -32.00086 L -16.200353 -32.00086 z M -11.299963 -20.00086 C -7.4999666 -20.00086 -4.2499601 -18.667524 -1.5499627 -16.00086 L 0.05159975 -14.151251 L 1.7000373 -16.00086 C 4.3333679 -18.667524 7.5349369 -20.00086 11.3016 -20.00086 C 15.101596 -20.00086 18.351602 -18.667524 21.0516 -16.00086 C 23.68493 -13.367529 25.000819 -10.167913 25.000819 -6.4012506 C 25.000819 -2.7012543 23.68493 0.48286667 21.0516 3.1495307 L 21.000819 3.1983588 L 20.950037 3.2491401 L 19.000819 4.8487494 L 1.6004279 19.448359 C 1.1337617 19.815025 0.6008179 19.99914 0.0008185 19.99914 C -0.5658476 19.99914 -1.0658486 19.815025 -1.4991815 19.448359 L -18.899572 4.8487494 C -19.599571 4.3820832 -20.233297 3.8491394 -20.799963 3.2491401 L -20.899572 3.1495307 C -23.632903 0.48286668 -24.999182 -2.7012543 -24.999181 -6.4012506 C -24.999182 -10.167913 -23.632903 -13.367529 -20.899572 -16.00086 C -18.266241 -18.667524 -15.066626 -20.00086 -11.299963 -20.00086 z " />
+    <g
+       id="g768"
+       transform="translate(-33.78292,54.052672)" />
+  </g>
+</svg>

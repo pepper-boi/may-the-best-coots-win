@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   version="1.1"
+   id="svg770"
+   sodipodi:docname="heart.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview772"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="9.0528861"
+     inkscape:cx="2.3749332"
+     inkscape:cy="8.0084957"
+     inkscape:window-width="1680"
+     inkscape:window-height="997"
+     inkscape:window-x="0"
+     inkscape:window-y="25"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g16862" />
+  <defs
+     id="defs764" />
+  <g
+     id="g768"
+     style="fill:#ff0000;stroke:#ffffff;stroke-opacity:1;stroke-width:0;stroke-dasharray:none">
+    <path
+       stroke="none"
+       fill="#FFFFFF"
+       d="M21.05 -16 Q25 -12.05 25 -6.4 25 -0.85 21.05 3.15 L21 3.2 20.95 3.25 19 4.85 1.6 19.45 Q0.9 20 0 20 -0.85 20 -1.5 19.45 L-18.9 4.85 Q-19.95 4.15 -20.8 3.25 L-20.9 3.15 Q-25 -0.85 -25 -6.4 -25 -12.05 -20.9 -16 -16.95 -20 -11.3 -20 -5.6 -20 -1.55 -16 L0.05 -14.15 1.7 -16 Q5.65 -20 11.3 -20 17 -20 21.05 -16"
+       id="path766"
+       style="fill:#ff0000;stroke:#ffffff;stroke-opacity:1;stroke-width:0;stroke-dasharray:none" />
+  </g>
+  <g
+     id="g16862"
+     style="fill:#ff0000;stroke:#ffffff;stroke-width:0;stroke-dasharray:none;stroke-opacity:1"
+     transform="scale(1.1148893)">
+    <path
+       stroke="none"
+       fill="#FFFFFF"
+       d="m 21.05,-16 q 3.95,3.95 3.95,9.6 0,5.55 -3.95,9.55 L 21,3.2 20.95,3.25 19,4.85 1.6,19.45 Q 0.9,20 0,20 -0.85,20 -1.5,19.45 L -18.9,4.85 q -1.05,-0.7 -1.9,-1.6 l -0.1,-0.1 q -4.1,-4 -4.1,-9.55 0,-5.65 4.1,-9.6 3.95,-4 9.6,-4 5.7,0 9.75,4 l 1.6,1.85 L 1.7,-16 q 3.95,-4 9.6,-4 5.7,0 9.75,4"
+       id="path16860"
+       style="fill:#ff0000;stroke:#ffffff;stroke-width:0;stroke-dasharray:none;stroke-opacity:1" />
+  </g>
+</svg>
