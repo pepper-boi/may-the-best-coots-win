@@ -45,6 +45,9 @@ func host():
 		
 		error_message.text = "Lobby Created"
 		
+		$HostAndJoin.hide()
+		$Waiting.show()
+		
 		var peer = NetworkedMultiplayerENet.new()
 		peer.create_server(PORT,2)
 		get_tree().set_network_peer(peer)
@@ -76,6 +79,7 @@ func join():
 
 func _player_connected(_id):
 	Gotm.lobby.hidden = true
+	$Waiting.hide()
 	rpc("start")
 
 func _end_game(_id):

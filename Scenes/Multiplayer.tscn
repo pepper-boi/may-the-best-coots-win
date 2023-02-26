@@ -110,7 +110,7 @@ text = "Tutorial"
 
 [node name="Text2060" type="Sprite" parent="HostAndJoin"]
 position = Vector2( 158, 42.0018 )
-rotation = 0.0523599
+rotation = 0.0436332
 scale = Vector2( 0.100552, 0.100548 )
 texture = ExtResource( 10 )
 
@@ -138,9 +138,20 @@ align = 1
 valign = 2
 autowrap = true
 script = ExtResource( 7 )
-__meta__ = {
-"_edit_lock_": true
-}
+
+[node name="Waiting" type="Label" parent="."]
+unique_name_in_owner = true
+visible = false
+anchor_right = 1.0
+margin_top = 2.0
+margin_bottom = 174.0
+grow_horizontal = 0
+theme = ExtResource( 2 )
+text = "Waiting for 
+other player..."
+align = 1
+valign = 1
+autowrap = true
 
 [node name="ChooseDie" parent="." instance=ExtResource( 6 )]
 visible = false
