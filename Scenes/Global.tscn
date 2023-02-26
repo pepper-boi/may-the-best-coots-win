@@ -1,0 +1,44 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://Scenes/Global.gd" type="Script" id=1]
+[ext_resource path="res://Art/Sounds/Ludum Dare 38 - Track 1.wav" type="AudioStream" id=2]
+[ext_resource path="res://Art/Sounds/click.ogg" type="AudioStream" id=3]
+[ext_resource path="res://Art/Sounds/smack.wav" type="AudioStream" id=4]
+[ext_resource path="res://Art/Sounds/Shield.ogg" type="AudioStream" id=5]
+[ext_resource path="res://Art/Sounds/switch30.ogg" type="AudioStream" id=6]
+[ext_resource path="res://Art/Sounds/explosionCrunch_000.ogg" type="AudioStream" id=7]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 2 )
+volume_db = -15.0
+autoplay = true
+
+[node name="Click" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 3 )
+volume_db = -5.0
+
+[node name="Dropped" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 6 )
+volume_db = -5.0
+
+[node name="Dropped2" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 6 )
+volume_db = -5.0
+pitch_scale = 1.7
+
+[node name="Explode" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 7 )
+volume_db = -5.0
+pitch_scale = 0.8
+
+[node name="Smack" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 4 )
+volume_db = -15.0
+
+[node name="Shield" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 5 )
+volume_db = -5.0
+pitch_scale = 1.25

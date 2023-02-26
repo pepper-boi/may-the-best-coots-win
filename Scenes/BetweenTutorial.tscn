@@ -1,0 +1,171 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://Misc/UI.tres" type="Theme" id=1]
+[ext_resource path="res://Scenes/BetweenGame.gd" type="Script" id=2]
+[ext_resource path="res://Art/dice_shield.svg" type="Texture" id=3]
+[ext_resource path="res://Scenes/Draggable.gd" type="Script" id=4]
+[ext_resource path="res://Art/dice_sword.svg" type="Texture" id=5]
+[ext_resource path="res://Art/dice_heart.svg" type="Texture" id=6]
+[ext_resource path="res://Art/dice_empty.svg" type="Texture" id=7]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Control2" type="Control" parent="."]
+margin_right = 320.0
+margin_bottom = 176.0
+
+[node name="Control" type="Control" parent="Control2"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+rect_pivot_offset = Vector2( -174, -52 )
+script = ExtResource( 2 )
+turn = 0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Control2/Control"]
+margin_top = 55.0
+margin_right = 1600.0
+margin_bottom = 205.0
+rect_scale = Vector2( 0.2, 0.2 )
+alignment = 1
+
+[node name="CootsBG" type="NinePatchRect" parent="Control2/Control/HBoxContainer"]
+unique_name_in_owner = true
+margin_left = 725.0
+margin_right = 875.0
+margin_bottom = 150.0
+grow_horizontal = 2
+grow_vertical = 2
+rect_min_size = Vector2( 150, 0 )
+texture = ExtResource( 7 )
+patch_margin_left = 64
+patch_margin_top = 42
+patch_margin_right = 64
+patch_margin_bottom = 42
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Control2/Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = -18.0
+margin_bottom = -18.0
+alignment = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Control2/Control/VBoxContainer"]
+margin_top = 72.0
+margin_right = 320.0
+margin_bottom = 104.0
+alignment = 1
+
+[node name="Container" type="Container" parent="Control2/Control/VBoxContainer/HBoxContainer"]
+margin_left = 148.0
+margin_right = 172.0
+margin_bottom = 32.0
+rect_min_size = Vector2( 24, 32 )
+rect_pivot_offset = Vector2( 16, 16 )
+
+[node name="TextureRect" type="TextureRect" parent="Control2/Control/VBoxContainer/HBoxContainer/Container"]
+modulate = Color( 0.658824, 0.658824, 0.658824, 1 )
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -12.0
+margin_top = -12.0
+margin_right = 12.0
+margin_bottom = 12.0
+rect_min_size = Vector2( 24, 24 )
+rect_pivot_offset = Vector2( 8, 8 )
+texture = ExtResource( 7 )
+expand = true
+stretch_mode = 1
+script = ExtResource( 4 )
+
+[node name="Control" type="Control" parent="Control2/Control"]
+anchor_bottom = 1.0
+margin_right = 39.0
+
+[node name="Coots2BG2" type="NinePatchRect" parent="Control2/Control/Control"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = 14.5
+margin_top = -41.0
+margin_right = 423.5
+margin_bottom = 108.0
+grow_horizontal = 2
+grow_vertical = 2
+rect_min_size = Vector2( 310, 0 )
+rect_rotation = 89.9
+rect_scale = Vector2( 0.2, 0.2 )
+texture = ExtResource( 7 )
+patch_margin_left = 64
+patch_margin_top = 42
+patch_margin_right = 64
+patch_margin_bottom = 42
+
+[node name="TextureRect2" type="TextureRect" parent="Control2/Control/Control"]
+modulate = Color( 0, 0.415686, 1, 1 )
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -13.0
+margin_top = 14.0
+margin_right = 11.0
+margin_bottom = 38.0
+rect_min_size = Vector2( 24, 24 )
+rect_pivot_offset = Vector2( 8, 8 )
+texture = ExtResource( 3 )
+expand = true
+stretch_mode = 1
+script = ExtResource( 4 )
+type = "s"
+on_side = false
+
+[node name="TextureRect3" type="TextureRect" parent="Control2/Control/Control"]
+modulate = Color( 1, 0, 0, 1 )
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -13.0
+margin_top = -12.0
+margin_right = 11.0
+margin_bottom = 12.0
+rect_min_size = Vector2( 16, 16 )
+rect_pivot_offset = Vector2( 8, 8 )
+texture = ExtResource( 5 )
+expand = true
+stretch_mode = 1
+script = ExtResource( 4 )
+type = "d"
+on_side = false
+
+[node name="TextureRect4" type="TextureRect" parent="Control2/Control/Control"]
+modulate = Color( 1, 0, 0.560784, 1 )
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -13.0
+margin_top = -38.0
+margin_right = 11.0
+margin_bottom = -14.0
+rect_min_size = Vector2( 16, 16 )
+rect_pivot_offset = Vector2( 8, 8 )
+texture = ExtResource( 6 )
+expand = true
+stretch_mode = 1
+script = ExtResource( 4 )
+type = "l"
+on_side = false
+
+[node name="Join" type="Button" parent="Control2/Control"]
+margin_left = 115.0
+margin_top = 89.0
+margin_right = 205.0
+margin_bottom = 109.0
+rect_min_size = Vector2( 85, 0 )
+theme = ExtResource( 1 )
+disabled = true
+text = "Ready"

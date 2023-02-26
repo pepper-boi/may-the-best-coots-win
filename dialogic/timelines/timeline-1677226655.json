@@ -1,0 +1,132 @@
+{
+	"events": [
+		{
+			"character": "character-1677226601.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Hello and welcome to the illegal undeground cat fighting arena"
+		},
+		{
+			"character": "character-1677226601.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Here are our two contestants, Coots and Coots"
+		},
+		{
+			"character": "character-1677226601.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "Do you already know how to play?"
+		},
+		{
+			"choice": "Yes",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"change_scene": "res://Scenes/Multiplayer.tscn",
+			"event_id": "dialogic_041"
+		},
+		{
+			"choice": "No",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1677226601.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "The game is similar to rock, paper, scissors"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Attack beats love"
+		},
+		{
+			"call_node": {
+				"arguments": [
+					"1"
+				],
+				"method_name": "turn",
+				"target_node_path": "/root/Node2D/GameManager"
+			},
+			"event_id": "dialogic_042"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Shield beats attack"
+		},
+		{
+			"call_node": {
+				"arguments": [
+					"1"
+				],
+				"method_name": "turn",
+				"target_node_path": "/root/Node2D/GameManager"
+			},
+			"event_id": "dialogic_042"
+		},
+		{
+			"call_node": {
+				"arguments": [
+					"1"
+				],
+				"method_name": "turn",
+				"target_node_path": "/root/Node2D/GameManager"
+			},
+			"event_id": "dialogic_042"
+		},
+		{
+			"character": "character-1677226601.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Love beats shield"
+		},
+		{
+			"call_node": {
+				"arguments": [
+					"1"
+				],
+				"method_name": "turn",
+				"target_node_path": "/root/Node2D/GameManager"
+			},
+			"event_id": "dialogic_042"
+		},
+		{
+			"call_node": {
+				"arguments": [
+					"1"
+				],
+				"method_name": "turn",
+				"target_node_path": "/root/Node2D/GameManager"
+			},
+			"event_id": "dialogic_042"
+		},
+		{
+			"character": "character-1677226601.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Now you know the basics, back at the menu you can host a game and invite someone with the lobby name"
+		},
+		{
+			"change_scene": "res://Scenes/Multiplayer.tscn",
+			"event_id": "dialogic_041"
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1677226655.json",
+		"name": "Test"
+	}
+}

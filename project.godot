@@ -1,0 +1,385 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+_global_script_classes=[ {
+"base": "Reference",
+"class": "DTS",
+"language": "GDScript",
+"path": "res://addons/dialogic/Localization/translation_service.gd"
+}, {
+"base": "Node",
+"class": "Dialogic",
+"language": "GDScript",
+"path": "res://addons/dialogic/Other/DialogicClass.gd"
+}, {
+"base": "Reference",
+"class": "DialogicAnimaPropertiesHelper",
+"language": "GDScript",
+"path": "res://addons/dialogic/Nodes/Anima/DialogicAnimaPropertiesHelper.gd"
+}, {
+"base": "Node",
+"class": "DialogicAnimaResources",
+"language": "GDScript",
+"path": "res://addons/dialogic/Nodes/Anima/DialogicAnimaResources.gd"
+}, {
+"base": "Control",
+"class": "DialogicBackgroundMusic",
+"language": "GDScript",
+"path": "res://addons/dialogic/Nodes/BackgroundMusic.gd"
+}, {
+"base": "Node",
+"class": "DialogicCustomEvents",
+"language": "GDScript",
+"path": "res://addons/dialogic/Nodes/DialogicCustomEvents.gd"
+}, {
+"base": "Node",
+"class": "DialogicDefinitionsUtil",
+"language": "GDScript",
+"path": "res://addons/dialogic/Other/DialogicDefinitionsUtil.gd"
+}, {
+"base": "Node",
+"class": "DialogicParser",
+"language": "GDScript",
+"path": "res://addons/dialogic/Parser/DialogicParser.gd"
+}, {
+"base": "Reference",
+"class": "DialogicResources",
+"language": "GDScript",
+"path": "res://addons/dialogic/Other/DialogicResources.gd"
+}, {
+"base": "Reference",
+"class": "DialogicUtil",
+"language": "GDScript",
+"path": "res://addons/dialogic/Other/DialogicUtil.gd"
+}, {
+"base": "TextureRect",
+"class": "Draggable",
+"language": "GDScript",
+"path": "res://Scenes/DragObj.gd"
+}, {
+"base": "Reference",
+"class": "GodoteNote",
+"language": "GDScript",
+"path": "res://addons/godotes/Note.gd"
+}, {
+"base": "Reference",
+"class": "GotmAuth",
+"language": "GDScript",
+"path": "res://addons/gotm/GotmAuth.gd"
+}, {
+"base": "Reference",
+"class": "GotmBlob",
+"language": "GDScript",
+"path": "res://addons/gotm/GotmBlob.gd"
+}, {
+"base": "Reference",
+"class": "GotmConfig",
+"language": "GDScript",
+"path": "res://addons/gotm/GotmConfig.gd"
+}, {
+"base": "Reference",
+"class": "GotmContent",
+"language": "GDScript",
+"path": "res://addons/gotm/GotmContent.gd"
+}, {
+"base": "Reference",
+"class": "GotmDebug",
+"language": "GDScript",
+"path": "res://addons/gotm/GotmDebug.gd"
+}, {
+"base": "Reference",
+"class": "GotmFile",
+"language": "GDScript",
+"path": "res://addons/gotm/GotmFile.gd"
+}, {
+"base": "Reference",
+"class": "GotmLeaderboard",
+"language": "GDScript",
+"path": "res://addons/gotm/GotmLeaderboard.gd"
+}, {
+"base": "Reference",
+"class": "GotmLobby",
+"language": "GDScript",
+"path": "res://addons/gotm/GotmLobby.gd"
+}, {
+"base": "Reference",
+"class": "GotmLobbyFetch",
+"language": "GDScript",
+"path": "res://addons/gotm/GotmLobbyFetch.gd"
+}, {
+"base": "Reference",
+"class": "GotmMark",
+"language": "GDScript",
+"path": "res://addons/gotm/GotmMark.gd"
+}, {
+"base": "Reference",
+"class": "GotmPeriod",
+"language": "GDScript",
+"path": "res://addons/gotm/GotmPeriod.gd"
+}, {
+"base": "Reference",
+"class": "GotmQuery",
+"language": "GDScript",
+"path": "res://addons/gotm/GotmQuery.gd"
+}, {
+"base": "Reference",
+"class": "GotmScore",
+"language": "GDScript",
+"path": "res://addons/gotm/GotmScore.gd"
+}, {
+"base": "Reference",
+"class": "GotmUser",
+"language": "GDScript",
+"path": "res://addons/gotm/GotmUser.gd"
+}, {
+"base": "PanelContainer",
+"class": "HistoryRow",
+"language": "GDScript",
+"path": "res://addons/dialogic/Example Assets/History/HistoryRow.gd"
+}, {
+"base": "Reference",
+"class": "_Gotm",
+"language": "GDScript",
+"path": "res://addons/gotm/_impl/_Gotm.gd"
+}, {
+"base": "Reference",
+"class": "_GotmAuth",
+"language": "GDScript",
+"path": "res://addons/gotm/_impl/_GotmAuth.gd"
+}, {
+"base": "Reference",
+"class": "_GotmAuthLocal",
+"language": "GDScript",
+"path": "res://addons/gotm/_impl/_GotmAuthLocal.gd"
+}, {
+"base": "Reference",
+"class": "_GotmBlob",
+"language": "GDScript",
+"path": "res://addons/gotm/_impl/_GotmBlob.gd"
+}, {
+"base": "Reference",
+"class": "_GotmBlobLocal",
+"language": "GDScript",
+"path": "res://addons/gotm/_impl/_GotmBlobLocal.gd"
+}, {
+"base": "Reference",
+"class": "_GotmContent",
+"language": "GDScript",
+"path": "res://addons/gotm/_impl/_GotmContent.gd"
+}, {
+"base": "Reference",
+"class": "_GotmContentLocal",
+"language": "GDScript",
+"path": "res://addons/gotm/_impl/_GotmContentLocal.gd"
+}, {
+"base": "Reference",
+"class": "_GotmDebugImpl",
+"language": "GDScript",
+"path": "res://addons/gotm/_impl/_GotmDebugImpl.gd"
+}, {
+"base": "Reference",
+"class": "_GotmImpl",
+"language": "GDScript",
+"path": "res://addons/gotm/_impl/_GotmImpl.gd"
+}, {
+"base": "Reference",
+"class": "_GotmImplUtility",
+"language": "GDScript",
+"path": "res://addons/gotm/_impl/_GotmImplUtility.gd"
+}, {
+"base": "Reference",
+"class": "_GotmLeaderboard",
+"language": "GDScript",
+"path": "res://addons/gotm/_impl/_GotmLeaderboard.gd"
+}, {
+"base": "Reference",
+"class": "_GotmMark",
+"language": "GDScript",
+"path": "res://addons/gotm/_impl/_GotmMark.gd"
+}, {
+"base": "Reference",
+"class": "_GotmMarkLocal",
+"language": "GDScript",
+"path": "res://addons/gotm/_impl/_GotmMarkLocal.gd"
+}, {
+"base": "Reference",
+"class": "_GotmPeriod",
+"language": "GDScript",
+"path": "res://addons/gotm/_impl/_GotmPeriod.gd"
+}, {
+"base": "Reference",
+"class": "_GotmQuery",
+"language": "GDScript",
+"path": "res://addons/gotm/_impl/_GotmQuery.gd"
+}, {
+"base": "Reference",
+"class": "_GotmScore",
+"language": "GDScript",
+"path": "res://addons/gotm/_impl/_GotmScore.gd"
+}, {
+"base": "Reference",
+"class": "_GotmScoreLocal",
+"language": "GDScript",
+"path": "res://addons/gotm/_impl/_GotmScoreLocal.gd"
+}, {
+"base": "Reference",
+"class": "_GotmStore",
+"language": "GDScript",
+"path": "res://addons/gotm/_impl/_GotmStore.gd"
+}, {
+"base": "Reference",
+"class": "_GotmUser",
+"language": "GDScript",
+"path": "res://addons/gotm/_impl/_GotmUser.gd"
+}, {
+"base": "Reference",
+"class": "_GotmUserLocal",
+"language": "GDScript",
+"path": "res://addons/gotm/_impl/_GotmUserLocal.gd"
+}, {
+"base": "Reference",
+"class": "_GotmUtility",
+"language": "GDScript",
+"path": "res://addons/gotm/_impl/_GotmUtility.gd"
+}, {
+"base": "Reference",
+"class": "_LocalStore",
+"language": "GDScript",
+"path": "res://addons/gotm/_impl/_LocalStore.gd"
+} ]
+_global_script_class_icons={
+"DTS": "",
+"Dialogic": "",
+"DialogicAnimaPropertiesHelper": "",
+"DialogicAnimaResources": "",
+"DialogicBackgroundMusic": "",
+"DialogicCustomEvents": "",
+"DialogicDefinitionsUtil": "",
+"DialogicParser": "",
+"DialogicResources": "",
+"DialogicUtil": "",
+"Draggable": "",
+"GodoteNote": "",
+"GotmAuth": "",
+"GotmBlob": "",
+"GotmConfig": "",
+"GotmContent": "",
+"GotmDebug": "",
+"GotmFile": "",
+"GotmLeaderboard": "",
+"GotmLobby": "",
+"GotmLobbyFetch": "",
+"GotmMark": "",
+"GotmPeriod": "",
+"GotmQuery": "",
+"GotmScore": "",
+"GotmUser": "",
+"HistoryRow": "",
+"_Gotm": "",
+"_GotmAuth": "",
+"_GotmAuthLocal": "",
+"_GotmBlob": "",
+"_GotmBlobLocal": "",
+"_GotmContent": "",
+"_GotmContentLocal": "",
+"_GotmDebugImpl": "",
+"_GotmImpl": "",
+"_GotmImplUtility": "",
+"_GotmLeaderboard": "",
+"_GotmMark": "",
+"_GotmMarkLocal": "",
+"_GotmPeriod": "",
+"_GotmQuery": "",
+"_GotmScore": "",
+"_GotmScoreLocal": "",
+"_GotmStore": "",
+"_GotmUser": "",
+"_GotmUserLocal": "",
+"_GotmUtility": "",
+"_LocalStore": ""
+}
+
+[application]
+
+config/name="LudwigJam"
+run/main_scene="res://Scenes/Multiplayer.tscn"
+config/icon="res://Art/icon.png"
+
+[autoload]
+
+Gotm="*res://addons/gotm/Gotm.gd"
+g="*res://Scenes/Global.tscn"
+
+[debug]
+
+gdscript/warnings/unused_variable=false
+gdscript/warnings/return_value_discarded=false
+
+[display]
+
+window/size/width=320
+window/size/height=176
+window/stretch/mode="2d"
+window/stretch/aspect="keep"
+
+[editor_plugins]
+
+enabled=PoolStringArray( "res://addons/dialogic/plugin.cfg", "res://addons/godotes/plugin.cfg" )
+
+[gui]
+
+common/drop_mouse_on_gui_input_disabled=true
+
+[importer_defaults]
+
+texture={
+"compress/bptc_ldr": 0,
+"compress/hdr_mode": 0,
+"compress/lossy_quality": 0.7,
+"compress/mode": 0,
+"compress/normal_map": 0,
+"detect_3d": false,
+"flags/anisotropic": false,
+"flags/filter": false,
+"flags/mipmaps": false,
+"flags/repeat": 0,
+"flags/srgb": 2,
+"process/HDR_as_SRGB": false,
+"process/fix_alpha_border": true,
+"process/invert_color": false,
+"process/normal_map_invert_y": false,
+"process/premult_alpha": false,
+"size_limit": 0,
+"stream": false,
+"svg/scale": 1.0
+}
+
+[input]
+
+dialogic_default_action={
+"deadzone": 0.5,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":16777221,"physical_scancode":0,"unicode":0,"echo":false,"script":null)
+, Object(InputEventMouseButton,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"button_mask":0,"position":Vector2( 0, 0 ),"global_position":Vector2( 0, 0 ),"factor":1.0,"button_index":1,"pressed":true,"doubleclick":false,"script":null)
+, Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":32,"physical_scancode":0,"unicode":0,"echo":false,"script":null)
+, Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":88,"physical_scancode":0,"unicode":0,"echo":false,"script":null)
+, Object(InputEventJoypadButton,"resource_local_to_scene":false,"resource_name":"","device":0,"button_index":0,"pressure":0.0,"pressed":false,"script":null)
+ ]
+}
+
+[physics]
+
+common/enable_pause_aware_picking=true
+
+[rendering]
+
+quality/intended_usage/framebuffer_allocation=0
+quality/intended_usage/framebuffer_allocation.mobile=0
+2d/snapping/use_gpu_pixel_snap=true
+environment/default_environment="res://Misc/default_env.tres"
